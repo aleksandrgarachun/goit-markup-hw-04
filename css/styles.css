@@ -82,7 +82,6 @@ h1 {
     display: flex;
     gap: 40px;
     justify-content: center;
-    /*margin-right: 332px;*/
 
 }
 .nav-link {
@@ -92,12 +91,26 @@ h1 {
     letter-spacing: 0.02em;
     display: inline-block;
     padding: 24px 0;
-
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
 .nav-link:focus {
     color: #404bbf;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    width: 48px;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+    content: "";
 }
 
 .address {
