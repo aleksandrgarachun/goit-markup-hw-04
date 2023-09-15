@@ -431,3 +431,50 @@ h1 {
     letter-spacing: 0.02em;
     width: 264px;
 }
+
+.container-footer {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+}
+
+.container-footer-logo {
+    margin-right: 120px;
+}
+.paragraph-footer-social {
+    
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--color-paragraph);
+        margin-bottom: 16px;
+}
+.list-socials-footer {
+    display: flex;
+    gap: 16px;
+    
+}
+.social-item-footer {
+    width: 40px;
+    height: 40px;
+}
+.social-link-footer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-link-team);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-link-footer:hover, 
+.social-link-footer:focus {
+    background-color: #31D0AA;
+}
+
+.icon-footer {
+    fill: var(--color-paragraph-footer);
+}
