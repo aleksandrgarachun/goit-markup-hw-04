@@ -460,7 +460,6 @@ h1 {
 .social-item-footer {
     width: 40px;
     height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-footer {
     width: 100%;
@@ -470,11 +469,9 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link-footer:hover {
-    background-color: #31D0AA;
-}
-
+.social-link-footer:hover,
 .social-link-footer:focus {
     background-color: #31D0AA;
 }
