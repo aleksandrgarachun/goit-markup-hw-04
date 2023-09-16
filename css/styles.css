@@ -97,20 +97,27 @@ h1 {
     display: inline-block;
     padding: 24px 0;
     position: relative;
-    color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    
 }
+
 
 .nav-link:hover,
 .nav-link:focus {
     color: #404bbf;
-    /*position: relative;
-    color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
-.nav-link::after {
+.nav-link-carent {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: inline-block;
+    padding: 24px 0;
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link-carent::after {
     content: '';
     position: absolute;
     left: 0;
@@ -119,6 +126,7 @@ h1 {
     border-radius: 2px;
     background-color: #404bbf;
     width: 100%;
+    
 
 }
 
@@ -152,8 +160,8 @@ h1 {
 .order-sec {
     background-color: #2E2F42;
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/people-office.jpg);
-    max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    /*max-width: 1440px;*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
